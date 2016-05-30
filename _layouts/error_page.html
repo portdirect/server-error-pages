@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="login-pf">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,24 @@
 <meta name="author" content="">
 <title>{{ page.title }}</title>
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly.min.css">
+<link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly-additions.min.css">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
 /* Error Page Inline Styles */
+html {
+  height: 100%;
+}
 body {
+    background: #333 url("https://raw.githubusercontent.com/portdirect/portdirect.github.io/master/img/intro-bg.jpg") no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
   padding-top: 20px;
+  border-top: 3px solid #39a5dc;
+  height: 100%;
 }
 /* Layout */
 .jumbotron {
@@ -36,6 +48,9 @@ body {
   font-size: 21px;
   padding: 14px 24px;
 }
+.login-pf .container {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
 /* Colors */
 .green {color:#5cb85c;}
 .orange {color:#f0ad4e;}
@@ -50,7 +65,9 @@ body {
 </head>
 <body onload="javascript:loadDomain();">
 <!-- Error Page Content -->
+<div>
 {{ content }}
+<div>
 <!-- End Error Page Content -->
 <!--Scripts-->
 <!-- jQuery library -->
