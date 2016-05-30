@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Slow Down">
+<meta name="description" content="408 Request Time-out">
 <meta name="author" content="">
-<title>Slow Down</title>
+<title>408 Request Time-out</title>
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly.min.css">
 <link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly-additions.min.css">
@@ -67,29 +67,45 @@ body {
 <!-- Error Page Content -->
 <div>
 <div class="container">
-  <!-- Jumbotron -->
-  <div class="jumbotron">
-    <h2><strong>PORT.</strong>DIRECT</h2>
-    <h1><i class="fa fa-dashboard"></i> Slow Down</h1>
-    <h2><strong>Rate Limit Exceeded.</strong></h3>
-    <p class="lead">The web server is returning a rate limiting notification <em><span id="display-domain"></span></em>.</p>
-    <a href="javascript:document.location.reload(true);" class="btn btn-primary btn-lg text-center"><span class="">Try This Page Again</span></a>
-  </div>
-</div>
-<div class="container">
-  <div class="body-content">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>What happened?</h2>
-        <p class="lead">This error means you have exceeded the request rate limit for the the web server you are accessing.</p>
-        <p class="lead"> Rate Limit Thresholds are set higher than a human, or API requests, accessing this site should be able to reach and are mostly for protection against automated attacks.</p>
-      </div>
-      <div class="col-md-6">
-        <h2>What can I do?</h2>
-        <p class="lead">The best thing to do is to lay off the coffee, slow down with your requests and try again in a few minutes. We apologize for any inconvenience.</p>
-       </div>
+    <div class="jumbotron">
+        <h2><strong>PORT.</strong>DIRECT</h2>
+
+
+        <h1><i class="fa fa-hourglass-end"></i> 408 Request Time-out</h1>
+
+
+        <p class="lead"><strong>Your browser didn't send a complete request in time. <em><span id="display-domain"></span></em>.</strong></p>
+
+
+        <p><a class="btn btn-primary btn-lg" onclick="javascript:checkSite();">Take Me To The Homepage</a>
+        <script type="text/javascript">
+            function checkSite(){
+              var currentSite = window.location.hostname;
+                window.location = "http://" + currentSite;
+            }
+        </script></p>
     </div>
-  </div>
+
+
+    <div class="body-content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>What happened?</h2>
+
+
+                <p class="lead">A 408 error status means that your browser did now reply to a message within the timeframe that the server expected, this is often caused by intermittent connection issues.</p>
+            </div>
+
+
+            <div class="col-md-6">
+                <h2>What can I do?</h2>
+
+
+                <p class="lead">Please use your browsers back button and try your last action again. If you need immediate assistance, please contact
+                support.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div>
