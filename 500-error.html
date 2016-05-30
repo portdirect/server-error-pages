@@ -7,13 +7,19 @@ title: 500 Internal Server Error
         <h2><strong>PORT.</strong>DIRECT</h2>
 
 
-        <h1><span class="glyphicon glyphicon-fire"></span> {{page.title}}</h1>
+        <h1><i class="glyphicon glyphicon-fire"></i> {{page.title}}</h1>
+
 
         <p class="lead"><strong>The web server is returning an internal error for <em><span id="display-domain"></span></em>.</strong></p>
 
 
-
-        <p><a href="javascript:document.location.reload(true);" class="btn btn-primary btn-lg text-center"><span class="">Try This Page Again</span></a></p>
+        <p><a class="btn btn-primary btn-lg" onclick="javascript:checkSite();">Take Me To The Homepage</a>
+        <script type="text/javascript">
+            function checkSite(){
+              var currentSite = window.location.hostname;
+                window.location = "http://" + currentSite;
+            }
+        </script></p>
     </div>
 
 
