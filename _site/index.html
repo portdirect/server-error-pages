@@ -1,65 +1,115 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Server-error-pages by alexphelps</title>
+<!DOCTYPE html>
+<html lang="en" class="login-pf">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Inactive">
+<meta name="author" content="">
+<title>Inactive</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://rawgit.com/portdirect/server-error-pages/gh-pages/patternfly/css/patternfly.min.css">
+<link rel="stylesheet" href="https://rawgit.com/portdirect/server-error-pages/gh-pages/patternfly/css/patternfly-additions.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+/* Error Page Inline Styles */
+html {
+  height: 100%;
+}
+body {
+  background: #f5f5f5 url("https://portdirect.github.io/img/intro-bg.jpg") no-repeat center center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  padding-top: 20px;
+  border-top: 3px solid #39a5dc;
+  height: 100%;
+}
+/* Layout */
+.jumbotron {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  padding: 10px 0px;
+}
+/* Everything but the jumbotron gets side spacing for mobile-first views */
+.masthead, .body-content, {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+.login-pf .container {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+/* Colors */
+.green {color:#5cb85c;}
+.orange {color:#f0ad4e;}
+.red {color:#d9534f;}
+</style>
+<script type="text/javascript">
+  function loadDomain() {
+    var display = document.getElementById("display-domain");
+    display.innerHTML = document.domain;
+  }
+</script>
+</head>
+<body onload="javascript:loadDomain();">
+<!-- Error Page Content -->
+<div>
+<div class="container">
+    <div class="jumbotron">
+        <h1><i class="fa fa-anchor"></i>
+        </h1>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Server-error-pages</h1>
-        <p>Easy to use, professional error pages to replace the plaintext error pages that come with any server software like Nginx or Apache</p>
 
-        <p class="view"><a href="https://github.com/alexphelps/Server-Error-Pages">View the Project on GitHub <small>alexphelps/Server-Error-Pages</small></a></p>
+        <h1><strong>PORT.</strong>DIRECT</h1>
 
 
-        <ul>
-          <li><a href="https://github.com/alexphelps/Server-Error-Pages/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/alexphelps/Server-Error-Pages/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/alexphelps/Server-Error-Pages">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Server Error Pages</h3>
-        <p>Easy to use, professional error pages to replace the plaintext error pages that come with any server software like Nginx or Apache</p>
-        <p><strong>Quick Details</strong></p>
-        <ul>
-          <li>Unbranded and generic informational text for the user</li>
-          <li>Single HTML files, no directory structure required</li>
-          <li>Javascript to get the current domain for content. </li>
-          <li>Based on Bootstrap 3</li>
-          <li>Uses Bootstrap CDN from NetDNA</li>
-          <li>Uses Fontawesome CDN from NetDNA</li>
-          </ul>
-        <p>Below, you'll find a list of all available error pages and links to a live demo.</p>
-        <p><strong>Error Pages Demos</strong></p>
-        <ul>	
-          <li><a href="http://alexphelps.github.io/server-error-pages/403-error.html" target="_blank">403 Error</a></li>
-          <li><a href="http://alexphelps.github.io/server-error-pages/404-error.html" target="_blank">404 Error</a></li>
-          <li><a href="http://alexphelps.github.io/server-error-pages/500-error.html" target="_blank">500 Error</a></li>
-          <li><a href="http://alexphelps.github.io/server-error-pages/502-error.html" target="_blank">502 Error</a></li>
-          <li><a href="http://alexphelps.github.io/server-error-pages/503-error.html" target="_blank">503 Error</a></li>
-          <li><a href="http://alexphelps.github.io/server-error-pages/504-error.html" target="_blank">504 Error</a></li>
-          <li><a href="http://alexphelps.github.io/server-error-pages/maintenance-page.html" target="_blank">Temporary Maintenance</a></li>
-          <li><a href="http://alexphelps.github.io/server-error-pages/rate-limit-error.html" target="_blank">Rate Limit Error</a></li>
-        </ul>
-    
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/alexphelps">alexphelps</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        <p class="lead">The web server for <em><span id="display-domain"></span></em> is currently undergoing some
+        maintenance.</p>
+
+
+        <p><a class="btn btn-primary btn-lg" onclick="javascript:checkSite();">Take Me To The Homepage</a>
+        <script type="text/javascript">
+            function checkSite(){
+              var currentSite = window.location.hostname;
+                window.location = "http://" + currentSite;
+            }
+        </script></p>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+
+
+    <div class="body-content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>What happened?</h2>
+
+
+                <p class="lead">You have arrived at a page that is undergoing maintenance.</p>
+            </div>
+
+
+            <div class="col-md-6">
+                <h2>What can I do?</h2>
+
+
+                <p class="lead">Please use your browser's back button and check that you're in the right place. If you
+                need immediate assistance, please contact support.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+<!-- End Error Page Content -->
+</body>
 </html>

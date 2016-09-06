@@ -7,9 +7,8 @@
 <meta name="author" content="">
 <title>504 Gateway Timeout</title>
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly.min.css">
-<link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly-additions.min.css">
-
+<link rel="stylesheet" href="https://rawgit.com/portdirect/server-error-pages/gh-pages/patternfly/css/patternfly.min.css">
+<link rel="stylesheet" href="https://rawgit.com/portdirect/server-error-pages/gh-pages/patternfly/css/patternfly-additions.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
 /* Error Page Inline Styles */
@@ -67,37 +66,43 @@ body {
 <!-- Error Page Content -->
 <div>
 <div class="container">
-  <!-- Jumbotron -->
-  <div class="jumbotron">
-    <h2><strong>PORT.</strong>DIRECT</h2>
-    <h1><i class="fa fa-clock-o"></i> 504 Gateway Timeout</h1>
-    <p class="lead">The web server is returning an unexpected networking error for <em><span id="display-domain"></span></em>.</p>
-    <a href="javascript:document.location.reload(true);" class="btn btn-primary btn-lg text-center"><span>Try This Page Again</span></a>
-  </div>
-</div>
-<div class="container">
-  <div class="body-content">
+    <div class="jumbotron">
+        <h2><strong>PORT.</strong>DIRECT</h2>
 
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-6">
-        <h2>What happened?</h2>
-        <p class="lead">A 504 error status implies there is a slow IP communication problem between back-end servers attempting to fulfill this request.</p>
-      </div>
-      <div class="col-md-6">
-        <h2>What can I do?</h2>
-        <p><a class="btn btn-sm btn-info"  href="https://status.uptrends.com/128e3426bec34db595caa7a245d37cb3">Check the <strong>PORT.</strong>DIRECT service status page.</a></p>
-        <p class="lead">Also, clearing your browser cache and refreshing the page may clear this issue. If the problem persists and you need immediate assistance, please contact support.</p>
-     </div>
+
+        <h1><i class="fa fa-clock-o"></i> 504 Gateway Timeout</h1>
+
+
+        <p class="lead">The web server is returning an unexpected networking error for <em><span id=
+        "display-domain"></span></em>.</p>
+        <a class="btn btn-primary btn-lg text-center" href="javascript:document.location.reload(true);"><span>Try This
+        Page Again</span></a>
     </div>
-  </div>
+
+
+    <div class="body-content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>What happened?</h2>
+
+
+                <p class="lead">A 504 error status implies there is a slow IP communication problem between back-end
+                servers attempting to fulfill this request.</p>
+            </div>
+
+
+            <div class="col-md-6">
+                <h2>What can I do?</h2>
+
+
+                <p class="lead">Also, clearing your browser cache and refreshing the page may clear this issue. If the
+                problem persists and you need immediate assistance, please contact support.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div>
 <!-- End Error Page Content -->
-<!--Scripts-->
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -7,9 +7,8 @@
 <meta name="author" content="">
 <title>503 Service Unavailable</title>
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly.min.css">
-<link rel="stylesheet" href="https://rawgit.com/patternfly/patternfly/master/dist/css/patternfly-additions.min.css">
-
+<link rel="stylesheet" href="https://rawgit.com/portdirect/server-error-pages/gh-pages/patternfly/css/patternfly.min.css">
+<link rel="stylesheet" href="https://rawgit.com/portdirect/server-error-pages/gh-pages/patternfly/css/patternfly-additions.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
 /* Error Page Inline Styles */
@@ -74,34 +73,45 @@ body {
         <h1><i class="fa fa-exclamation-triangle"></i> 503 Service Unavailable</h1>
 
 
-        <p class="lead"><strong>The web server is returning an unexpected temporary error for <em><span id="display-domain"></span></em>.</strong></p>
+        <p class="lead"><strong>The web server is returning an unexpected temporary error for <em><span id=
+        "display-domain"></span></em>.</strong>
+        </p>
 
 
-        <p><a href="javascript:document.location.reload(true);" class="btn btn-primary btn-lg"><span class="">Try This Page Again</span></a></p>
+        <p><a class="btn btn-primary btn-lg" href="javascript:document.location.reload(true);"><span class="">Try This
+        Page Again</span></a>
+        </p>
     </div>
 
 
     <div class="body-content">
         <div class="row">
-          <div class="col-md-6">
-            <h2>What happened?</h2>
-            <p class="lead">A 503 error status implies that this is a temporary condition due to a temporary overloading or maintenance of the server. This error is normally a brief temporary interruption, as the backend service scales up.</p>
-          </div>
-          <div class="col-md-6">
-            <h2>What can I do?</h2>
-            <p><a class="btn btn-sm btn-info"  href="https://status.uptrends.com/128e3426bec34db595caa7a245d37cb3">Check the <strong>PORT.</strong>DIRECT service status page.</a></p>
-            <p class="lead">This error should go away very quickly, the best thing to do is to check back in a minute and everything should be working normaly again.</p>
-            <p class="lead">If you need immediate assistance, please contact support. We apologize for any inconvenience.</p>
-         </div>
+            <div class="col-md-6">
+                <h2>What happened?</h2>
+
+
+                <p class="lead">A 503 error status implies that this is a temporary condition due to a temporary
+                overloading or maintenance of the server. This error is normally a brief temporary interruption, as the
+                backend service scales up.</p>
+            </div>
+
+
+            <div class="col-md-6">
+                <h2>What can I do?</h2>
+
+
+                <p class="lead">This error should go away very quickly, the best thing to do is to check back in a
+                minute and everything should be working normaly again.</p>
+
+
+                <p class="lead">If you need immediate assistance, please contact support. We apologize for any
+                inconvenience.</p>
+            </div>
         </div>
     </div>
 </div>
 
 <div>
 <!-- End Error Page Content -->
-<!--Scripts-->
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>
